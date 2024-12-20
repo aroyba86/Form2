@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 4 HTML Assignment</title>
+  <style>
+    /* General table styling */
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    /* Form styling */
+    form {
+      max-width: 500px;
+      margin-top: 20px;
+    }
+    
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    
+    /* Navigation and section styling */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+    }
+
+    section {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Product Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Michael Jordan Trading Card</td>
+        <td>$1000.00</td>
+        <td>One</td>
+      </tr>
+      <tr>
+        <td>Tom Brady Trading Card</td>
+        <td>$10000.00</td>
+        <td>One</td>
+      </tr>
+      <tr>
+        <td>Jerry Rice Trading Card</td>
+        <td>$5000.00</td>
+        <td>One</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Image -->
+  <img src="https://via.placeholder.com/600x300.png?text=Tom+Brady+Image" alt="Tom Brady" style="width: 100%; margin-top: 20px;">
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Learn more about our company.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required placeholder="Write your message"></textarea>
+
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+</body>
+</html>
